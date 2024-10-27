@@ -5,4 +5,4 @@ RUN npm install
 COPY . .
 RUN npx prisma generate
 EXPOSE 3000
-CMD ["npm", "run", "build", "&&", "npx", "prisma", "migrate", "deploy", "&&", "npm", "run", "start"]
+CMD ["npm", "build", "&&", "npx", "prisma", "migrate", "deploy", "&&", "npm", "start"]
